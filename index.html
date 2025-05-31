@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Career Orientation by Dr. Sachin Ambekar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .slideshow {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(145deg, #1c2526, #121212);
+            transition: left 0.6s ease-in-out;
+        }
+
+        .slide.active {
+            left: 0;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #00b7eb;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            animation: fadeIn 0.8s ease;
+        }
+
+        p, ul {
+            font-size: 1.3em;
+            line-height: 1.7;
+            max-width: 900px;
+            margin-bottom: 15px;
+            animation: slideUp 0.8s ease;
+        }
+
+        ul {
+            list-style: none;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 12px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: '●';
+            color: #ffd700;
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            top: 4px;
+        }
+
+        .star-table {
+            display: table;
+            width: 80%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 1.1em;
+            animation: slideUp 0.8s ease;
+        }
+
+        .star-table div {
+            display: table-row;
+        }
+
+        .star-table span {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid #00b7eb;
+            text-align: left;
+        }
+
+        .star-table span:first-child {
+            font-weight: bold;
+            color: #ffd700;
+            width: 10%;
+            text-align: center;
+        }
+
+        .star-table span:nth-child(2) {
+            width: 20%;
+        }
+
+        .star-table span:nth-child(3) {
+            width: 70%;
+        }
+
+        img {
+            max-width: 180px;
+            border-radius: 50%;
+            margin: 20px 0;
+            border: 5px solid #00b7eb;
+            animation: zoomIn 1s ease;
+        }
+
+        .nav-buttons {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 25px;
+            z-index: 10;
+        }
+
+        .nav-buttons button {
+            padding: 12px 25px;
+            background: #ffd700;
+            border: none;
+            border-radius: 8px;
+            color: #121212;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .nav-buttons button:hover {
+            background: #e6c200;
+            transform: scale(1.05);
+        }
+
+        .nav-buttons button:disabled {
+            background: #444;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.7); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            p, ul, .star-table { font-size: 1.1em; }
+            img { max-width: 140px; }
+            .slide { padding: 30px; }
+            .nav-buttons button { padding: 10px 20px; font-size: 1em; }
+            .star-table { width: 95%; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.6em; }
+            p, ul, .star-table { font-size: 0.9em; }
+            .slide { padding: 20px; }
+            .star-table span { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="https://sachinambekar.in/assets/images/untitled-design-18-940x788.webp" alt="Dr. Sachin Ambekar">
+            <h1>Launch Your IT Career</h1>
+            <p>Presented by Dr. Sachin Ambekar<br>MBA, PhD, 22 Years in HR (IT, Service, Manufacturing)<br>Corporate Relations & Placement Expert for BE, MCA, MBA</p>
+            <p>Explore IT opportunities, success strategies, and comprehensive support in 45 minutes.</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <h1>Session Overview</h1>
+            <ul>
+                <li>Discover IT career prospects in India</li>
+                <li>Master strategies for IT success</li>
+                <li>Learn about our training and placement support</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <h1>Why Choose IT?</h1>
+            <p>IT drives global innovation: from AI and mobile apps to healthcare and gaming.</p>
+            <p>High demand, competitive salaries, and international opportunities await.</p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h1>India: Global IT Leader</h1>
+            <p>$200B+ industry with 8-10% annual growth.</p>
+            <p>Home to TCS, Infosys, and vibrant startups, employing over 5 million professionals.</p>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <h1>Diverse IT Careers</h1>
+            <ul>
+                <li>Software Developer (Java, Python, Full Stack)</li>
+                <li>Machine Learning & AI Engineer</li>
+                <li>Data Scientist, Cloud Architect, Cybersecurity Specialist</li>
+            </ul>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide">
+            <h1>Financial Rewards</h1>
+            <p>Freshers: ₹4-8 LPA (Java, Web Development)</p>
+            <p>Machine Learning/AI: ₹6-12 LPA (Entry-Level)</p>
+            <p>Senior Roles: ₹20 LPA and beyond</p>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide">
+            <h1>India’s Tech Centers</h1>
+            <ul>
+                <li>Bengaluru: India’s Silicon Valley</li>
+                <li>Hyderabad: Hub for AI and Cloud</li>
+                <li>Pune, Chennai, NCR, and growing remote opportunities</li>
+            </ul>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <h1>Mindset for Excellence</h1>
+            <ul>
+                <li>Cultivate curiosity and embrace challenges</li>
+                <li>Develop logical problem-solving skills</li>
+                <li>Adapt swiftly to technological advancements</li>
+            </ul>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <h1>Essential Technical Skills</h1>
+            <ul>
+                <li>Programming: Java, Python, JavaScript</li>
+                <li>Frameworks: Spring, React, TensorFlow</li>
+                <li>Tools: Git, Docker, AWS, Kubernetes</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h1>Critical Soft Skills</h1>
+            <ul>
+                <li>Effective communication for global projects</li>
+           
+            </ul>
+            <p>Soft skills are essential for thriving in international IT roles.</p>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <h1>Continuous Learning</h1>
+      
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide">
+            <h1>Our Expertise for  You</h1>
+            <p>Industry-aligned IT training programs.</p>
+            <p>Expert mentorship and hands-on projects for real-world readiness.</p>
+        </div>
+
+        <!-- Slide 13 -->
+        <div class="slide">
+            <h1>Training Roadmap</h1>
+            <ul>
+                <li>Core Training-Practice-Apptitude Test-Interview Techniques-CV Builing -Getting Hired </li>
+   
+      
+            </ul>
+        </div>
+
+        <!-- Slide 14 -->
+        <div class="slide">
+            <h1>Mastering Interviews with STAR</h1>
+            <p>Use the STAR method to structure compelling interview responses.</p>
+            <div class="star-table">
+                <div>
+                    <span>S</span>
+                    <span>Situation</span>
+                    <span>Describe the background or context</span>
+                </div>
+                <div>
+                    <span>T</span>
+                    <span>Task</span>
+                    <span>Explain what needed to be done</span>
+                </div>
+                <div>
+                    <span>A</span>
+                    <span>Action</span>
+                    <span>Share what you did specifically</span>
+                </div>
+                <div>
+                    <span>R</span>
+                    <span>Result</span>
+                    <span>Describe the outcome or result</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15 -->
+        <div class="slide">
+            <h1>Excelling in Aptitude Tests</h1>
+            <ul>
+                <li>Quantitative, logical, and verbal skills</li>
+                <li>Regular practice tests with detailed solutions</li>
+                <li>Strategies for effective time management</li>
+            </ul>
+        </div>
+
+        <!-- Slide 16 -->
+        <div class="slide">
+            <h1>Crafting a Winning CV</h1>
+            <ul>
+                <li>Professional templates optimized for Applicant Tracking Systems (ATS)</li>
+                <li>Highlight projects, skills, and certifications</li>
+                <li>Personalized feedback for maximum impact</li>
+            </ul>
+            <p>Applicant Tracking Systems (ATS) are software used by employers to screen CVs, requiring clear, keyword-rich formats.</p>
+        </div>
+
+        <!-- Slide 17 -->
+        <div class="slide">
+            <h1>Comprehensive Job Support</h1>
+            <ul>
+                <li>Job alerts from leading IT firms</li>
+                <li>Placement drives and recruiter networking</li>
+                <li>Ongoing career guidance and support</li>
+            </ul>
+        </div>
+
+        <!-- Slide 18 -->
+        <div class="slide">
+            <h1>Take First Step Now</h1>
+         
+            <p>Your success story begins here!</p>
+        </div>
+
+        <!-- Slide 19 -->
+        <div class="slide">
+            <h1>Begin Your Journey</h1>
+            <p>Enroll in our IT training programs today.</p>
+        </div>
+
+        <!-- Slide 20 -->
+        <div class="slide">
+            <h1>Thank You</h1>
+            <p>Have questions? We’re here to help!</p>
+        
+            <p>Thank you for joining us!</p>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            document.querySelectorAll('.nav-buttons button')[0].disabled = index === 0;
+            document.querySelectorAll('.nav-buttons button')[1].disabled = index === slides.length - 1;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
