@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,6 +127,33 @@
             animation: zoomIn 1s ease;
         }
 
+        .content-image {
+            max-width: 50%;
+            max-height: 300px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 3px solid #00b7eb;
+            animation: zoomIn 1s ease;
+            object-fit: cover;
+        }
+
+        .thank-you-image {
+            max-width: 60%;
+            max-height: 350px;
+            margin: 20px 0;
+            border-radius: 10px;
+            animation: zoomIn 1s ease;
+            object-fit: contain;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
         .nav-buttons {
             position: fixed;
             bottom: 30px;
@@ -180,6 +206,8 @@
             h1 { font-size: 2em; }
             p, ul, .star-table { font-size: 1.1em; }
             img { max-width: 140px; }
+            .content-image { max-width: 80%; max-height: 200px; }
+            .thank-you-image { max-width: 90%; max-height: 250px; }
             .slide { padding: 30px; }
             .nav-buttons button { padding: 10px 20px; font-size: 1em; }
             .star-table { width: 95%; }
@@ -188,6 +216,8 @@
         @media (max-width: 480px) {
             h1 { font-size: 1.6em; }
             p, ul, .star-table { font-size: 0.9em; }
+            .content-image { max-width: 90%; max-height: 150px; }
+            .thank-you-image { max-width: 90%; max-height: 200px; }
             .slide { padding: 20px; }
             .star-table span { padding: 8px; }
         }
@@ -217,6 +247,7 @@
         <div class="slide">
             <h1>Why Choose IT?</h1>
             <p>IT drives global innovation: from AI and mobile apps to healthcare and gaming.</p>
+            <img class="content-image" src="https://i.ytimg.com/vi/XBisUOndKLs/maxresdefault.jpg" alt="Why Choose IT">
             <p>High demand, competitive salaries, and international opportunities await.</p>
         </div>
 
@@ -224,6 +255,7 @@
         <div class="slide">
             <h1>India: Global IT Leader</h1>
             <p>$200B+ industry with 8-10% annual growth.</p>
+            <img class="content-image" src="https://tradeflock.com/wp-content/uploads/2022/03/20220314_1200x800px_best-companies-to-work-in-india.webp" alt="IT Companies Logo">
             <p>Home to TCS, Infosys, and vibrant startups, employing over 5 million professionals.</p>
         </div>
 
@@ -235,12 +267,17 @@
                 <li>Machine Learning & AI Engineer</li>
                 <li>Data Scientist, Cloud Architect, Cybersecurity Specialist</li>
             </ul>
+            <div class="image-container">
+                <img class="content-image" src="https://nexgoal.com/wp-content/uploads/2022/04/IT-Industry.jpg" alt="Need of IT Industry">
+                <img class="content-image" src="https://www.bluekraft.in/wp-content/uploads/2025/03/what-is-ai-1.jpg" alt="AI in IT">
+            </div>
         </div>
 
         <!-- Slide 6 -->
         <div class="slide">
             <h1>Financial Rewards</h1>
             <p>Freshers: ₹4-8 LPA (Java, Web Development)</p>
+            <img class="content-image" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202501/6785d3f26cbe5-salary-hike-for-junior-employees-072405343-16x9.jpg?size=948:533" alt="Financial Rewards">
             <p>Machine Learning/AI: ₹6-12 LPA (Entry-Level)</p>
             <p>Senior Roles: ₹20 LPA and beyond</p>
         </div>
@@ -253,6 +290,7 @@
                 <li>Hyderabad: Hub for AI and Cloud</li>
                 <li>Pune, Chennai, NCR, and growing remote opportunities</li>
             </ul>
+            <img class="content-image" src="https://homebazaar-blog.s3.ap-south-1.amazonaws.com/knowledge/wp-content/uploads/2022/08/16060740/FeatureImage_Top-10-IT-Hubs-In-India-2022.webp" alt="India’s Tech Centers">
         </div>
 
         <!-- Slide 8 -->
@@ -263,6 +301,7 @@
                 <li>Develop logical problem-solving skills</li>
                 <li>Adapt swiftly to technological advancements</li>
             </ul>
+            <img class="content-image" src="https://media.licdn.com/dms/image/v2/C4D12AQEYW3-qFcC1Og/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1625152156338?e=2147483647&v=beta&t=FqMcgeSyyvvRgG0tNF1Z7mnH7LD0HngM8qbd3uFAqnY" alt="Mindset for Excellence">
         </div>
 
         <!-- Slide 9 -->
@@ -273,6 +312,7 @@
                 <li>Frameworks: Spring, React, TensorFlow</li>
                 <li>Tools: Git, Docker, AWS, Kubernetes</li>
             </ul>
+            <img class="content-image" src="https://www.visualcv.com/static/7ad97ef79017e161884f02444772465b/61b4e/how_to_list_technical_skills_on_resume.png" alt="Essential Technical Skills">
         </div>
 
         <!-- Slide 10 -->
@@ -280,20 +320,20 @@
             <h1>Critical Soft Skills</h1>
             <ul>
                 <li>Effective communication for global projects</li>
-           
             </ul>
+            <img class="content-image" src="https://www.janets.org.uk/wp-content/uploads/2024/08/10-Essential-Soft-Skills-In-2024-and-how-to-develop-them.png" alt="Critical Soft Skills">
             <p>Soft skills are essential for thriving in international IT roles.</p>
         </div>
 
         <!-- Slide 11 -->
         <div class="slide">
             <h1>Continuous Learning</h1>
-      
+            <img class="content-image" src="https://i0.wp.com/silveroaksasset.com/wp-content/uploads/2020/03/Learning.jpg?w=1000&ssl=1" alt="Continuous Learning">
         </div>
 
         <!-- Slide 12 -->
         <div class="slide">
-            <h1>Our Expertise for  You</h1>
+            <h1>Our Expertise for You</h1>
             <p>Industry-aligned IT training programs.</p>
             <p>Expert mentorship and hands-on projects for real-world readiness.</p>
         </div>
@@ -302,10 +342,9 @@
         <div class="slide">
             <h1>Training Roadmap</h1>
             <ul>
-                <li>Core Training-Practice-Apptitude Test-Interview Techniques-CV Builing -Getting Hired </li>
-   
-      
+                <li>Core Training-Practice-Aptitude Test-Interview Techniques-CV Building-Getting Hired</li>
             </ul>
+            <img class="content-image" src="https://hrfibreglass.co.uk/wp-content/uploads/2023/09/road-map.jpg" alt="Training Roadmap">
         </div>
 
         <!-- Slide 14 -->
@@ -344,6 +383,7 @@
                 <li>Regular practice tests with detailed solutions</li>
                 <li>Strategies for effective time management</li>
             </ul>
+            <img class="content-image" src="https://thinkexam.com/blog/wp-content/uploads/2022/04/online-aptitude-test-by-thinkexam.jpg" alt="Excelling in Aptitude Tests">
         </div>
 
         <!-- Slide 16 -->
@@ -354,6 +394,7 @@
                 <li>Highlight projects, skills, and certifications</li>
                 <li>Personalized feedback for maximum impact</li>
             </ul>
+            <img class="content-image" src="https://media.istockphoto.com/id/1192900966/vector/cv-templates-professional-resume-letterhead-cover-letter-business-layout-job-applications.jpg?s=612x612&w=0&k=20&c=LWvYqT8H02JNLkGgjOnSMD6yi9bQBUSBucZlo9DCLOE=" alt="Crafting a Winning CV">
             <p>Applicant Tracking Systems (ATS) are software used by employers to screen CVs, requiring clear, keyword-rich formats.</p>
         </div>
 
@@ -365,12 +406,13 @@
                 <li>Placement drives and recruiter networking</li>
                 <li>Ongoing career guidance and support</li>
             </ul>
+            <img class="content-image" src="https://i0.wp.com/plopdo.com/wp-content/uploads/2021/08/Job-Hunting-Illustration-1.jpg?resize=1210%2C642&ssl=1" alt="Comprehensive Job Support">
         </div>
 
         <!-- Slide 18 -->
         <div class="slide">
             <h1>Take First Step Now</h1>
-         
+            <img class="content-image" src="https://i.pinimg.com/736x/fd/60/d1/fd60d1e9719749d30f93257510338e93.jpg" alt="Take First Step Now">
             <p>Your success story begins here!</p>
         </div>
 
@@ -384,7 +426,7 @@
         <div class="slide">
             <h1>Thank You</h1>
             <p>Have questions? We’re here to help!</p>
-        
+            <img class="thank-you-image" src="https://img.freepik.com/free-vector/thank-you-lettering-with-curls_1262-6964.jpg?semt=ais_items_boosted&w=740" alt="Thank You">
             <p>Thank you for joining us!</p>
         </div>
     </div>
